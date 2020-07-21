@@ -1,0 +1,63 @@
+/*
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box; //el tamano de la caja hasta el border de la caja 
+
+}*/
+
+nav{
+    
+    display: flex; 
+    flex-wrap: wrap; 
+    
+}
+
+nav > a{
+
+    width: 100%;
+    background-color: #00beff;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 1em;
+    border-top: 1px solid  #3bc6f5;
+    border-bottom: 1px solid  #01a5db;
+}
+
+nav > a:first-child{
+    border-top: none;
+}
+
+nav > a:last-child{
+    border-bottom: none;
+}
+
+@media only screen and (min-width:500px){
+
+    nav{
+        justify-content: space-evenly;
+
+    }
+    nav > a{
+        width: 25%;
+    box-sizing: border-box;
+    font-size: 24px;
+    border: none;
+    }
+
+}
+
+@media only screen and (min-width:800px){
+
+    nav{
+        justify-content: flex-end;
+    }
+    nav > a {
+        width: 15%;
+    }
+}
+
+
+
